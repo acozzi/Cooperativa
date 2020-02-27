@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Seguro No Pagamos Cooperativa</title>
+	<base href="www.seguronopagamos.coop">
+	<link rel="stylesheet" type="text/css" href="include/styles.css">
+	<meta charset="utf-8">
+	<script src="include/script.js"></script>
+	<noscript>Este explorador no soporta JS</noscript>
+</head>
+<body>
+	<h1>Contacto</h1>
+	<h2>Por favor ingrese sus datos y lo contactaremos a la brevedad</h2>
+	<form id="formContacto" name="formContacto" onsubmit="handleSubmit(); return false;">
+		<div>
+			<label>Nombre</label>
+        <input class="elemento" type="text" name="nombre" id="nombre" placeholder="Su nombre" />
+      </div>
+      <p>
+      <div>
+        <label>Apellido</label>
+        <input class="elemento" type="text" name="apellido" id="apellido" placeholder="Su Apellido" />
+      </div>
+      <p>
+      <div>
+        <label>DNI</label>
+        <input class="elemento" type="number" name="dni" id="dni" placeholder="DNI sin puntos" />
+      </div>
+      <p>
+      <div>
+        <label>Email</label>
+        <input class="elemento" type="email" name="email" id="email" placeholder="ingrese una dirección de email válida" />
+      </div>
+      <p>
+      <div>
+        <label>Telefono</label>
+        <input class="elemento" type="number" name="telefono" id="telefono" placeholder="ingrese su teléfono sin guiones ni espacios" />
+      </div>
+      <p>
+      <div>
+      <label>Tipo de Seguro</label>
+      <select class="elemento" onchange="seleccion(value)" id="tipo">
+          <option value="1">Básico</option>
+          <option value="2">Intermedio</option>
+          <option value="3">Premium</option>
+      </select>
+	  <p>
+	  <div name="precio" id="precio"></div> 
+	  <script>
+		document.getElementById("precio").innerHTML="Precio: 5.000";
+	  </script>
+	  <p>
+	  
+    </div>
+		
+		<input type="submit" value="Submit">
+    </form>
+	<div name="mensajeContacto" id="mensajeContacto"></div>
+  </body>
+  <footer>Dessarrollado por Alejandro Cozzi para el Curso de ReactJS</footer>
+</html>

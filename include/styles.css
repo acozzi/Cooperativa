@@ -1,0 +1,33 @@
+body {
+  background-color: white;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d3/Twinpines.svg');
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-color: green;
+}
+h2 {
+	background-color: green;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+#formContacto{
+	background-color: cyan;
+}
+.elemento{
+	background-color: magenta;
+	
+	
+}
+div[name=mensajeContacto]{
+	background-color: rgb(255,255,0);
+}
+footer{
+	vertical-align: bottom;
+	background-color: green;
+}
